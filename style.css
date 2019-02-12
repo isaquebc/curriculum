@@ -1,0 +1,354 @@
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #28313B;
+}
+html, body, header, main, nav, footer, article, blockquote,
+div, section, span, iframe, img, video, figure, a, p, h1, h2,
+h3, h4, h5, h6, strong, b, i, ul, ol, li, form, fieldset,
+label, input, input:focus, select, select:focus, textarea, textarea:focus, table, button, thead, tbody, tfoot,
+th, td, tr, aside, caption, sup, sub, q, small {
+	padding: 0;
+	margin: 0;
+	border: 0;
+  text-decoration: none;
+}
+
+a {
+  color: blue;
+	text-decoration: none;
+}
+
+html {
+	/* font-family "Lato", sans-serif */
+  width: 100%;
+  scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar{
+  width: 14px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #E7E7E7;
+}
+
+blockquote{
+	quotes: none;
+}
+blockquote:after,
+blockquote:before{
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  font-size: 16px;
+	line-height: 1;
+	width: 100%;
+  overflow-x: hidden;
+  font-family: 'Source Code Pro', monospace;
+}
+
+ol, nav ul{
+	list-style: none;
+}
+
+header {
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 10px;
+  background-color: rgba(255,255,255,.8)
+}
+
+header > nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header > nav li {
+  vertical-align: middle;
+  line-height: 100%;
+  display: inline-block;
+}
+
+header > nav li a {
+  display: block;
+  color: #28313B;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header > nav li a:hover {
+  border-bottom: solid 1px #111;
+}
+
+#home {
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+
+#home > .header {
+  position: absolute;
+  font-size: 2em;
+  display: inline-block;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+  height: 34px;
+  width: 100%;
+  padding-left: 20px;
+}
+
+#home > .header > h3 {
+  font-weight: 400;
+}
+
+#home > a.more {
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+#home > a.more > img {
+  height: 35px;
+  padding: 9px;
+}
+#home > a.more:hover {
+  color: #FFF;
+  cursor: pointer;
+}
+
+#profile {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #606060;
+  padding: 30px;
+}
+
+#profile > .profile-header {
+  text-align: center;
+  padding: 40px 0;
+}
+
+#profile > .profile-header > img {
+  height: 200px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 50px;
+}
+
+#profile > .profile-header > h2 {
+  font-size: 1.5em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#profile > ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+#profile > ul > li > label {
+  color: #aaaaaa;
+  font-weight: 300;
+}
+#profile > ul > li > p {
+  display: inline;
+  color: #d6d6d6;
+}
+
+#profile > p {
+  color: #d6d6d6;
+  margin: 10px 0;
+}
+
+#profile > div.contact > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+#profile > div.contact > h5 {
+  text-align: center;
+  font-size: 1.4em;
+  margin: 13px 0;
+}
+
+#profile > div.contact > ul > li {
+  vertical-align: middle;
+  line-height: 100%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#profile > div.contact > ul > li > a > img {
+  height: 30px;
+  vertical-align: middle;
+}
+
+#profile > div.contact > ul > li > a > label:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#profile > div.contact > ul > li > a > label {
+  vertical-align: middle;
+  height: 30px;
+  color: #d6d6d6;
+}
+
+#projects {
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f1f1f1
+}
+
+#projects > .project-list {
+  display: block;
+  list-style-type: none;
+  text-align: center;
+  padding: 20px;
+}
+
+#projects > .project-list > .project-item {
+  width: 300px;
+  min-height: 400px;
+  -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
+  padding: 20px;
+  display: inline-block;
+  margin: 5px;
+  background-color: #FFFFFF;
+}
+
+#projects > .project-list > .project-item > img {
+  height: 150px;
+  max-width: 250px;
+}
+
+#projects > .project-list > .project-item > label {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+#projects > .project-list > .project-item > .content {
+  margin: 5px 0;
+}
+
+#projects > .project-list > .project-item > .content > .description {
+  text-align: justify;
+  padding: 0 2px;
+  margin: 10px 0;
+}
+
+#projects > .project-list > .project-item > .content > .description > label {
+  font-weight: 600;
+}
+
+#knowledge {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.profile-image {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+}
+
+.knowledge-list-container {
+  padding: 10px;
+  text-align: center;
+}
+.knowledge-list-container > .exp-title {
+  font-size: 1.3em;
+}
+.knowledge-list {
+  max-width: 150px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 15px;
+}
+.knowledge-list > img {
+  max-width: 150px;
+  max-height: 100px;
+}
+.knowledge-list > label {
+  display: block;
+  text-align: center;
+}
+#footer {
+  position: relative;
+  background-color: #606060;
+  width: 100%;
+  padding: 20px 0
+}
+
+#footer > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+#footer > h5 {
+  text-align: center;
+  font-size: 1.4em;
+  margin: 13px 0;
+}
+
+#footer > ul > li {
+  vertical-align: middle;
+  line-height: 100%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#footer > ul > li > a > img {
+  height: 30px;
+  vertical-align: middle;
+}
+
+#footer > ul > li > a > label:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#footer > ul > li > a > label {
+  vertical-align: middle;
+  height: 30px;
+  color: #d6d6d6;
+}

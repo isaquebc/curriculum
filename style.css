@@ -68,10 +68,14 @@ ol, nav ul{
 }
 
 header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 10;
-  background-color: rgba(255,255,255,.8)
+}
+
+header > nav {
+  height: 50px;
+  padding: 10px 10px;
 }
 
 header > nav ul {
@@ -81,10 +85,6 @@ header > nav ul {
   overflow: hidden;
 }
 
-header > nav {
-  height: 50px;
-  padding: 3px 10px;
-}
 
 header > nav li {
   vertical-align: middle;
@@ -94,19 +94,23 @@ header > nav li {
 
 header > nav li a {
   display: block;
-  color: #28313B;
+  color: #aaa;
   text-align: center;
   text-decoration: none;
 }
 
 header > nav li a:hover {
-  border-bottom: solid 1px #111;
+  border-bottom: solid 1px #F1F1F1;
+  color: #F1F1F1;
 }
 
-#home {
+/* #home {
   height: 100vh;
   width: 100%;
   padding: 20px;
+  background: linear-gradient(217deg, rgba(126,22,0,1), rgba(126,22,0,0) 70.71%),
+            linear-gradient(127deg, rgba(113,147,68,.8), rgba(113,147,68,0) 70.71%),
+            linear-gradient(336deg, rgba(142,194,86,.8), rgba(142,194,86,0) 70.71%);
 }
 
 #home > .header {
@@ -128,8 +132,6 @@ header > nav li a:hover {
 }
 
 #home > a.more {
-  background-color: #FFF;
-  border-radius: 50%;
   position: absolute;
   left: 0;
   right: 0;
@@ -145,13 +147,13 @@ header > nav li a:hover {
 #home > a.more:hover {
   color: #FFF;
   cursor: pointer;
-}
+} */
 
 #profile {
   min-height: 100vh;
   width: 100%;
-  background-color: #606060;
   padding: 30px;
+  background: linear-gradient(#7E1600, #719344);
 }
 
 #profile > .profile-header {
@@ -170,6 +172,7 @@ header > nav li a:hover {
   font-size: 1.5em;
   display: inline-block;
   vertical-align: middle;
+  color: #aaa
 }
 
 #profile > ul {
@@ -230,17 +233,18 @@ header > nav li a:hover {
 }
 
 #projects {
-  min-height: 100vh;
   width: 100%;
   padding: 20px 0;
-  background-color: #f1f1f1
+  background: linear-gradient(#719344, #FFF);
 }
 
 #projects > .project-list {
-  display: block;
   list-style-type: none;
   text-align: center;
   padding: 20px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 #projects > .project-list > .project-item {
@@ -280,7 +284,6 @@ header > nav li a:hover {
 }
 
 #knowledge {
-  min-height: 100vh;
   width: 100%;
 }
 #knowledge > .exp-title {
@@ -326,9 +329,9 @@ header > nav li a:hover {
 }
 #footer {
   position: relative;
-  background-color: #606060;
   width: 100%;
-  padding: 20px 0
+  height: 300px;
+  background: linear-gradient(#FFFFFF, #7E1600);
 }
 
 #footer > ul {
@@ -337,12 +340,17 @@ header > nav li a:hover {
   padding: 0;
   overflow: hidden;
   text-align: center;
+  bottom: 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
-#footer > h5 {
+#footer  h5 {
   text-align: center;
   font-size: 1.4em;
   margin: 13px 0;
+  color: #F1F1F1
 }
 
 #footer > ul > li {

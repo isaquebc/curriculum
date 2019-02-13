@@ -180,6 +180,9 @@ header > nav li a:hover {
   list-style-type: none;
   padding: 10px 0;
 }
+#profile > ul >li {
+  margin: 5px 0
+}
 
 #profile > ul > li > label {
   color: #aaaaaa;
@@ -193,43 +196,6 @@ header > nav li a:hover {
 #profile > p {
   color: #d6d6d6;
   margin: 10px 0;
-}
-
-#profile > div.contact > ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-align: center;
-}
-
-#profile > div.contact > h5 {
-  text-align: center;
-  font-size: 1.4em;
-  margin: 13px 0;
-}
-
-#profile > div.contact > ul > li {
-  vertical-align: middle;
-  line-height: 100%;
-  display: inline-block;
-  cursor: pointer;
-}
-
-#profile > div.contact > ul > li > a > img {
-  height: 30px;
-  vertical-align: middle;
-}
-
-#profile > div.contact > ul > li > a > label:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-#profile > div.contact > ul > li > a > label {
-  vertical-align: middle;
-  height: 30px;
-  color: #d6d6d6;
 }
 
 #projects {

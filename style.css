@@ -104,6 +104,17 @@ header > nav li a:hover {
   color: #F1F1F1;
 }
 
+header > nav li > a.curriculum-button {
+  right: 20px;
+  padding: 30px;
+  position: absolute;
+  -webkit-box-shadow: 4px 3px 20px -2px rgba(0,0,0,0.58);
+  -moz-box-shadow: 4px 3px 20px -2px rgba(0,0,0,0.58);
+  box-shadow: 4px 3px 20px -2px rgba(0,0,0,0.58);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
 /* #home {
   height: 100vh;
   width: 100%;
@@ -214,8 +225,8 @@ header > nav li a:hover {
 }
 
 #projects > .project-list > .project-item {
-  width: 300px;
-  height: 29em;
+  min-width: 300px;
+  min-height: 29em;
   -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
   box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
@@ -223,6 +234,11 @@ header > nav li a:hover {
   display: inline-block;
   margin: 5px;
   background-color: #FFFFFF;
+}
+
+#projects > .project-list > .project-item > .centoeonze {
+  font-size: 8em;
+  font-weight: 300;
 }
 
 #projects > .project-list > .project-item > img {

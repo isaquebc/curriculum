@@ -339,7 +339,7 @@ header > nav li > a.curriculum-button {
   color: #d6d6d6;
 }
 
-@media only screen and (min-width: 600px) {
+@media screen and (max-width: 768px) {
   header > nav li {
     display: block;
     font-size: 2em;

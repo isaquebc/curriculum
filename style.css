@@ -222,19 +222,38 @@ header > nav li > a.curriculum-button {
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
+  display: block;
+  white-space: nowrap;
 }
 
 #projects > .project-list > .project-item {
-  min-width: 300px;
+  max-width: 370px;
   min-height: 29em;
   -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
   box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
   padding: 20px;
   display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
   margin: 5px;
   background-color: #FFFFFF;
 }
+
+/* @media screen and (min-width: 600px) {
+  #projects > .project-list > .project-item {
+    width: 80%;
+    white-space: normal;
+    min-height: 29em;
+    -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
+    padding: 20px;
+    display: inline-block;
+    margin: 5px;
+    background-color: #FFFFFF;
+  }
+} */
 
 #projects > .project-list > .project-item > .centoeonze {
   font-size: 8em;

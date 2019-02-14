@@ -239,11 +239,17 @@ header > nav li > a.curriculum-button {
 #projects > .project-list > .project-item > .centoeonze {
   font-size: 8em;
   font-weight: 300;
+  margin: 20px auto;
 }
 
 #projects > .project-list > .project-item > img {
   height: 150px;
   max-width: 250px;
+  display: block;
+  margin: 20px auto;
+}
+#projects > .project-list > .project-item > img.agro-image {
+  background-color: #8bc34a;
 }
 
 #projects > .project-list > .project-item > label {

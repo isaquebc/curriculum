@@ -115,6 +115,11 @@ header > nav li > a.curriculum-button {
   background-color: transparent;
 }
 
+header > nav li > a.curriculum-button .download-icon {
+  height: 20px;
+  margin: 0 10px;
+}
+
 
 #profile {
   min-height: 100vh;
@@ -342,7 +347,7 @@ header > nav li > a.curriculum-button {
 @media screen and (max-width: 768px) {
   header > nav li {
     display: block;
-    font-size: 2em;
+    font-size: 1em;
     padding: 10px 0;
   }
   header > nav li a.menu {
@@ -352,7 +357,7 @@ header > nav li > a.curriculum-button {
     right: 0;
     left: 0;
     margin: auto;
-    width: 350px;
+    width: 200px;
   } 
   #profile {
     padding-top: 300px;

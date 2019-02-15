@@ -137,7 +137,6 @@ header > nav li > a.curriculum-button .download-icon {
   height: 200px;
   border-radius: 50%;
   vertical-align: middle;
-  margin-right: 50px;
 }
 
 #profile > .profile-header > h2 {
@@ -188,7 +187,7 @@ header > nav li > a.curriculum-button .download-icon {
 }
 
 #projects > .project-list > .project-item {
-  max-width: 370px;
+  max-width: 330px;
   min-height: 29em;
   -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
@@ -360,6 +359,6 @@ header > nav li > a.curriculum-button .download-icon {
     width: 200px;
   } 
   #profile {
-    padding-top: 300px;
+    padding-top: 200px;
   }
 }

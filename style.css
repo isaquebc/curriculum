@@ -202,21 +202,6 @@ header > nav li > a .download-icon {
   background-color: #FFFFFF;
 }
 
-/* @media screen and (min-width: 600px) {
-  #projects > .project-list > .project-item {
-    width: 80%;
-    white-space: normal;
-    min-height: 29em;
-    -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
-    padding: 20px;
-    display: inline-block;
-    margin: 5px;
-    background-color: #FFFFFF;
-  }
-} */
-
 #projects > .project-list > .project-item > .centoeonze {
   font-size: 8em;
   font-weight: 300;
@@ -276,9 +261,11 @@ header > nav li > a .download-icon {
   width: auto;
   display: flex;
 }
+
 .knowledge-list-container > .exp-title {
   font-size: 1.3em;
 }
+
 .knowledge-list {
   vertical-align: middle;
   margin: 0 30px;
@@ -288,10 +275,12 @@ header > nav li > a .download-icon {
   max-width: 150px;
   text-align: center;
 }
+
 .knowledge-list > img {
   max-width: 150px;
   max-height: 100px;
 }
+
 .knowledge-list > label {
   display: block;
   text-align: center;

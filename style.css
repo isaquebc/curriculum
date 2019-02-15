@@ -96,6 +96,7 @@ header > nav li a {
   display: block;
   color: #aaa;
   text-align: center;
+  padding: 4px 0;
   text-decoration: none;
 }
 

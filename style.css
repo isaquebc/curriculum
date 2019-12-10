@@ -28,7 +28,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.3);
   background-color: #F5F5F5;
 }
 ::-webkit-scrollbar{
@@ -38,7 +38,7 @@ html {
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,.3);
   background-color: #E7E7E7;
 }
 
@@ -127,7 +127,23 @@ header > nav li > a .download-icon {
   min-height: 100vh;
   width: 100%;
   padding: 30px;
-  background: linear-gradient(#7E1600, #719344);
+  background: linear-gradient(#000, rgba(0,0,0, .7));
+}
+
+.basic-informations {
+  font-size: 1;
+  display: inline-block;
+  vertical-align: middle;
+}
+.basic-informations > li {
+  display: block;
+  margin-left: 10px;
+}
+
+.basic-informations > li > p {
+  color: #FFF;
+  text-align: left;
+  padding: 5px 0;
 }
 
 #profile > .profile-header {
@@ -162,7 +178,8 @@ header > nav li > a .download-icon {
   font-weight: 300;
 }
 #profile > ul > li > p {
-  display: inline;
+  /* display: inline; */
+  margin: 20px 0;
   color: #d6d6d6;
 }
 
@@ -174,7 +191,7 @@ header > nav li > a .download-icon {
 #projects {
   width: 100%;
   padding: 20px 0;
-  background: linear-gradient(#719344, #FFF);
+  background: linear-gradient(rgba(0,0,0, .7), #FFF);
 }
 
 #projects > .project-list {
@@ -190,7 +207,7 @@ header > nav li > a .download-icon {
 
 #projects > .project-list > .project-item {
   max-width: 330px;
-  min-height: 29em;
+  height: 35em;
   -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
   box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.3);
@@ -214,9 +231,6 @@ header > nav li > a .download-icon {
   display: block;
   margin: 20px auto;
 }
-#projects > .project-list > .project-item > img.agro-image {
-  height: auto;
-}
 
 #projects > .project-list > .project-item > label {
   font-size: 1.3em;
@@ -231,6 +245,8 @@ header > nav li > a .download-icon {
   text-align: justify;
   padding: 0 2px;
   margin: 10px 0;
+  max-height: 200px;
+  overflow: auto;
 }
 
 #projects > .project-list > .project-item > .content > .description > label {
@@ -243,7 +259,6 @@ header > nav li > a .download-icon {
 #knowledge > .exp-title {
   text-align: center;
   margin: 20px 0;
-
 }
 
 .profile-image {
@@ -255,11 +270,13 @@ header > nav li > a .download-icon {
 .knowledge-list-container {
   padding: 10px;
   text-align: center;
-  height: 169px;
-  overflow-y: hidden;
-  overflow-x: auto;
-  width: auto;
+  width: 100%;
+  /* height: 169px; */
+  /* overflow-y: hidden; */
+  /* overflow-x: auto; */
+  /* width: auto; */
   display: flex;
+  flex-wrap: wrap;
 }
 
 .knowledge-list-container > .exp-title {
@@ -267,29 +284,41 @@ header > nav li > a .download-icon {
 }
 
 .knowledge-list {
-  vertical-align: middle;
-  margin: 0 30px;
+  margin: 10px 10px;
   display: flex;
+  padding: 5px;
+  width: 145px;
+  align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 150px;
+  min-height: 150px;
   text-align: center;
+  border: 1px solid #CCC;
 }
 
 .knowledge-list > img {
-  max-width: 150px;
-  max-height: 100px;
+  width: 70px;
+  height: auto;
+}
+
+.round-black-image {
+  background-color: #000;
+  border-radius: 50%;
+  height: 150px !important;
+  width: 150px;
+  padding: 8px;
 }
 
 .knowledge-list > label {
   display: block;
   text-align: center;
+  font-size: 0.9em;
 }
 #footer {
   position: relative;
   width: 100%;
   height: 300px;
-  background: linear-gradient(#FFFFFF, #7E1600);
+  background: linear-gradient(#FFFFFF, #000);
 }
 
 #footer > ul {
@@ -318,6 +347,43 @@ header > nav li > a .download-icon {
   cursor: pointer;
 }
 
+.social-medias {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  bottom: 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.social-medias li > a > label:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.social-medias li > a > label {
+  color: #d6d6d6;
+}
+.social-medias li {
+  vertical-align: middle;
+  line-height: 100%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.social-media-container {
+  position: relative;
+  width: 100%;
+  height: 35px
+}
+
+.social-medias > li > a > img {
+  height: 30px;
+  vertical-align: middle;
+}
+
 #footer > ul > li > a > img {
   height: 30px;
   vertical-align: middle;
@@ -333,6 +399,10 @@ header > nav li > a .download-icon {
   height: 30px;
   color: #d6d6d6;
 }
+
+  .social-medias li > a > label {
+    display: none;
+  }
 
 @media screen and (max-width: 768px) {
   header > nav li {

@@ -1,49 +1,46 @@
 <!DOCTYPE html>
-</body>
-</html>
-<html>
-  <head> 
-    <!-- CSS -->
+<html lang="pt">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Isaque Costa — Full Stack Developer</title>
     <link rel='stylesheet' type='text/css' href='style.css' />
-    <!--[if IE]><link rel="shortcut icon" href="/curriculum/favicon.ico"><![endif]-->
-    <link rel="icon" href="/curriculum/favicon.ico" />
-    
-    <!-- Font -->
+    <link rel="icon" href="/curriculum/assets/images/favicon.svg" />
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134482175-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-134482175-1');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-134482175-1');
     </script>
   </head>
-  <body>
+  <body data-lang="pt">
     <header>
       <nav>
         <ul>
-          <!-- <li><img class='profile-image' src='https://instagram.fcgh5-1.fna.fbcdn.net/vp/f27d33cd5e8c36ee6178c282c0b4dfb0/5CFB7AE3/t51.2885-15/e35/13774779_823143224488452_628047470_n.jpg?_nc_ht=instagram.fcgh5-1.fna.fbcdn.net' height='100px' width='100px' /></li> -->
-          <li><a class='menu' href='#profile'>Perfil</a></li>
-          <li><a class='menu' href='#projects'>Projetos</a></li>
-          <li><a class='menu' href='#knowledge'>Conhecimento</a></li>
-          <li><a class='menu' href='#footer'>Contato</a></li>
-          <li><a class='menu' target='_blank' href='/curriculum/assets/files/curriculo_12-02-2019-new.pdf'>Curriculo<img class='download-icon' src='/curriculum/assets/images/iconfinder_24_171492.svg'/></a></li>
+          <li><a class='menu' href='#profile'><span class="lang-pt">Perfil</span><span class="lang-en">Profile</span></a></li>
+          <li><a class='menu' href='#experience'><span class="lang-pt">Experiência</span><span class="lang-en">Experience</span></a></li>
+          <li><a class='menu' href='#projects'><span class="lang-pt">Projetos</span><span class="lang-en">Projects</span></a></li>
+          <li><a class='menu' href='#knowledge'><span class="lang-pt">Habilidades</span><span class="lang-en">Skills</span></a></li>
+          <li><a class='menu' href='#footer'><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a></li>
+          <li><a class='menu' target='_blank' href='/curriculum/assets/files/curriculo_12-02-2019-new.pdf'><span class="lang-pt">Currículo</span><span class="lang-en">Resume</span><img class='download-icon' src='/curriculum/assets/images/iconfinder_24_171492.svg'/></a></li>
+          <li><button class='lang-toggle' id='lang-toggle'>EN</button></li>
         </ul>
       </nav>
     </header>
     <main>
+
+      <!-- PROFILE -->
       <section id='profile'>
         <div class='profile-header'>
           <img src='/curriculum/assets/images/IsaqueCosta-68.jpg' />
           <ul class='basic-informations'>
             <li><p>Isaque Benevides Costa</p></li>
-            <li><p>23 anos</p></li>
-            <li><p>Desenvolvedor</p></li>
+            <li><p><span class="lang-pt">9+ anos de experiência</span><span class="lang-en">9+ years of experience</span></p></li>
+            <li><p>Full Stack Developer</p></li>
           </ul>
         </div>
         <div class='social-media-container'>
@@ -68,300 +65,536 @@
             </li>
           </ul>
         </div>
-        <p>Programador ativista ninja.</p>
-        <p>Acredito que podemos mudar o mundo e a forma que nós vivemos a partir de ferramentas para pessoas. Focando na evolução individual e coletiva.</p>
-        <p>O principio da evolução tecnológica é a facilitação da vida humana, ou seja, deixar as coisas mais fáceis.</p>
-        <p>No século XXI, um dos maiores problemas do Brasil e do mundo é a desigualdade social, que cria alguns outros problemas como a falta de acesso a informação (príncipalmente para as minorias).</p>
-        <p>Como sabemos que o direito mínimo do ser humano é o acesso à informação e à evolução, hoje meu lado ativista clama por levar o poder da tecnologia para pessoas terem acesso ao main stream e assim engrandecer a colaboração entre ciência e humanidade.</p>
-        <p>Com a colaboração e crescimento destas tecnologias, teremos acesso fácil à ferramentas que podem mudar a carência de acesso desta minoria, gerando renda e evolução cultural.</p>
+        <p class="lang-pt">Desenvolvedor full stack sênior com 9+ anos de experiência. Trabalhei em startups, assumi o cargo de CTO e passei 5 anos em uma empresa americana de rastreamento de dutos. Construo sistemas do frontend ao DevOps, com foco em qualidade, escalabilidade e entregas reais.</p>
+        <p class="lang-en">Senior full stack developer with 9+ years of experience. Worked across startups, served as CTO, and spent 5 years at a US pipeline-tracking company. I build end-to-end systems — from UI to DevOps — focused on quality, scalability, and real delivery.</p>
+        <p class="lang-pt">Acredito que podemos mudar o mundo com ferramentas para pessoas, focando na evolução individual e coletiva. A tecnologia existe para facilitar a vida humana — e levar esse poder para minorias é o que guia meu lado ativista.</p>
+        <p class="lang-en">I believe we can change the world through tools built for people, focusing on individual and collective growth. Technology exists to make life easier — bringing that power to underrepresented communities is what drives me.</p>
         <ul>
           <li>
-            <label>Experiência:</label>
-            <p>Iniciada na faculdade em 2013</p>
-            <p>Primeiro estágio em 2017</p>
+            <label><span class="lang-pt">Experiência:</span><span class="lang-en">Experience:</span></label>
+            <p><span class="lang-pt">Iniciada na faculdade em 2013</span><span class="lang-en">Started in college, 2013</span></p>
+            <p><span class="lang-pt">Primeiro estágio em 2017</span><span class="lang-en">First internship, 2017</span></p>
           </li>
         </ul>
       </section>
+
+      <!-- WORK EXPERIENCE -->
+      <section id='experience'>
+        <h3 class='section-title'><span class="lang-pt">Experiência Profissional</span><span class="lang-en">Work Experience</span></h3>
+        <div class='timeline'>
+
+          <div class='timeline-item'>
+            <div class='timeline-dot'></div>
+            <div class='timeline-card'>
+              <div class='timeline-header'>
+                <span class='role-badge'>Senior Full Stack Developer</span>
+                <span class='timeline-period'>Mar 2021 – Apr 2026</span>
+              </div>
+              <h4 class='company-name'>CDI GlobalTrack</h4>
+              <span class='timeline-location'>Oklahoma, USA &middot; <span class="lang-pt">Remoto</span><span class="lang-en">Remote</span></span>
+              <ul class='timeline-bullets'>
+                <li>
+                  <span class="lang-pt">Responsável pelo frontend (React + TypeScript) e backend (Django, 31 apps) de ponta a ponta</span>
+                  <span class="lang-en">End-to-end ownership of frontend (React + TypeScript) and backend (Django, 31 apps)</span>
+                </li>
+                <li>
+                  <span class="lang-pt">Plataforma de inspeção de dutos em tempo real com WebSockets e framework reativo RxDjango</span>
+                  <span class="lang-en">Real-time pipeline inspection platform using WebSockets and the RxDjango reactive framework</span>
+                </li>
+                <li>
+                  <span class="lang-pt">Arquitetura multi-banco: PostgreSQL (PostGIS), MongoDB, Redis, Memcached</span>
+                  <span class="lang-en">Multi-database architecture: PostgreSQL (PostGIS), MongoDB, Redis, Memcached</span>
+                </li>
+                <li>
+                  <span class="lang-pt">Orquestração Docker, CI/CD com GitHub Actions, implantação em AWS (EC2, RDS, S3, ECR)</span>
+                  <span class="lang-en">Docker orchestration, GitHub Actions CI/CD, AWS deployment (EC2, RDS, S3, ECR)</span>
+                </li>
+                <li>
+                  <span class="lang-pt">Stack de monitoramento: Prometheus, Grafana, Loki, Sentry</span>
+                  <span class="lang-en">Monitoring stack: Prometheus, Grafana, Loki, Sentry</span>
+                </li>
+              </ul>
+              <div class='tech-tags'>
+                <span>Django</span><span>React</span><span>TypeScript</span><span>PostGIS</span><span>WebSockets</span><span>Docker</span><span>AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class='timeline-item'>
+            <div class='timeline-dot'></div>
+            <div class='timeline-card'>
+              <div class='timeline-header'>
+                <span class='role-badge'>CTO</span>
+                <span class='timeline-period'>2019 – 2021</span>
+              </div>
+              <h4 class='company-name'>ACE1</h4>
+              <span class='timeline-location'>Brasil</span>
+              <ul class='timeline-bullets'>
+                <li>
+                  <span class="lang-pt">Liderança completa da arquitetura e desenvolvimento de marketplace concorrente ao GOAT e StockX</span>
+                  <span class="lang-en">Led full architecture and development of a marketplace competing with GOAT and StockX</span>
+                </li>
+                <li>
+                  <span class="lang-pt">Apps iOS e Android com React Native, backend serverless na AWS (Lambda + API Gateway)</span>
+                  <span class="lang-en">iOS and Android apps with React Native, serverless AWS backend (Lambda + API Gateway)</span>
+                </li>
+                <li>
+                  <span class="lang-pt">Sistema de certificado de autenticidade para colecionáveis de luxo</span>
+                  <span class="lang-en">Certificate of authenticity system for luxury collectibles</span>
+                </li>
+                <li>
+                  <span class="lang-pt">Custo zero de infraestrutura por 2 anos usando AWS serverless</span>
+                  <span class="lang-en">Zero infra cost for 2 years leveraging AWS serverless</span>
+                </li>
+              </ul>
+              <div class='tech-tags'>
+                <span>React Native</span><span>Serverless</span><span>AWS Lambda</span><span>Node.js</span><span>iOS</span><span>Android</span>
+              </div>
+            </div>
+          </div>
+
+          <div class='timeline-item'>
+            <div class='timeline-dot'></div>
+            <div class='timeline-card'>
+              <div class='timeline-header'>
+                <span class='role-badge'>Tech Lead</span>
+                <span class='timeline-period'>2017 – 2019</span>
+              </div>
+              <h4 class='company-name'>TheVelops</h4>
+              <span class='timeline-location'>Brasil</span>
+              <ul class='timeline-bullets'>
+                <li>
+                  <span class="lang-pt">Cresci de trainee a tech lead em uma startup-agency com múltiplos projetos em paralelo</span>
+                  <span class="lang-en">Grew from trainee to tech lead at a startup-agency managing multiple parallel projects</span>
+                </li>
+                <li>
+                  <span class="lang-pt">Projeto principal: Permuta Fácil, plataforma de permuta de imóveis que sustentou a empresa por anos</span>
+                  <span class="lang-en">Flagship project: Permuta Fácil, a property exchange platform that sustained the company for years</span>
+                </li>
+                <li>
+                  <span class="lang-pt">Responsável por custos AWS, revisão de PRs, monitoramento e planejamento de projetos</span>
+                  <span class="lang-en">Responsible for AWS costs, PR reviews, monitoring, and project planning</span>
+                </li>
+                <li>
+                  <span class="lang-pt">Desenvolvi 4 projetos do zero, com suporte a dezenas de outros na agência</span>
+                  <span class="lang-en">Built 4 projects from scratch, supported dozens of others in the agency</span>
+                </li>
+              </ul>
+              <div class='tech-tags'>
+                <span>React</span><span>Node.js</span><span>MongoDB</span><span>AWS</span><span>Team Lead</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
       <section id='projects'>
+        <h3 class='section-title'><span class="lang-pt">Projetos</span><span class="lang-en">Projects</span></h3>
         <ul class='project-list'>
+
           <li class='project-item'>
-            <img class='round-black-image' src='https://som.vc/images/colorful-logo.svg'/>
+            <img src='/curriculum/assets/images/gt-logo.svg' class='gt-logo'/>
+            <label>CDI GlobalTrack</label>
+            <div class='content'>
+              <p>
+                <label><span class="lang-pt">Cargo:</span><span class="lang-en">Role:</span></label>
+                <label>Senior Full Stack Developer</label>
+              </p>
+              <div class='description'>
+                <label><span class="lang-pt">Descrição:</span><span class="lang-en">Description:</span></label>
+                <p>
+                  <span class="lang-pt">Plataforma empresarial de inspeção de dutos em tempo real. Rastreamento GPS, análise geoespacial com PostGIS, detecção de anomalias e colaboração multi-usuário via WebSockets. Django + React + TypeScript + Docker + AWS.</span>
+                  <span class="lang-en">Enterprise real-time pipeline inspection platform. GPS tracking, geospatial analytics with PostGIS, anomaly detection, and multi-user collaboration via WebSockets. Django + React + TypeScript + Docker + AWS.</span>
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class='project-item'>
+            <img src='/curriculum/assets/images/sementes-logo.svg' class='sementes-logo'/>
+            <label>Sementes</label>
+            <div class='content'>
+              <p>
+                <label><span class="lang-pt">Cargo:</span><span class="lang-en">Role:</span></label>
+                <label><span class="lang-pt">Desenvolvedor Solo</span><span class="lang-en">Solo Developer</span></label>
+              </p>
+              <div class='description'>
+                <label><span class="lang-pt">Descrição:</span><span class="lang-en">Description:</span></label>
+                <p>
+                  <span class="lang-pt">Plataforma de impacto social celebrando história e comunidade negra. Frontend em Next.js com CMS Strapi, sistema de gestão por QR code e exportação de dados.</span>
+                  <span class="lang-en">Social impact platform celebrating Black history and community. Next.js frontend with Strapi CMS, QR code management system, and data export.</span>
+                </p>
+              </div>
+              <p><label>tech: </label>Next.js &middot; Strapi &middot; PostgreSQL &middot; React</p>
+            </div>
+          </li>
+
+          <li class='project-item'>
+            <h5 class='cib-title'>&lt;/&gt;</h5>
+            <label>CIB Style</label>
+            <div class='content'>
+              <p>
+                <label><span class="lang-pt">Cargo:</span><span class="lang-en">Role:</span></label>
+                <label><span class="lang-pt">Autor</span><span class="lang-en">Author</span></label>
+              </p>
+              <div class='description'>
+                <label><span class="lang-pt">Descrição:</span><span class="lang-en">Description:</span></label>
+                <p>
+                  <span class="lang-pt">Biblioteca de componentes React publicada no npm. Sistema de design atômico com suporte a temas claro/escuro e Storybook para documentação interativa.</span>
+                  <span class="lang-en">React component library published on npm. Atomic design system with light/dark theming and Storybook for interactive documentation.</span>
+                </p>
+              </div>
+              <p><label>npm: </label><a href='https://www.npmjs.com/package/@alphorriese/cib-style' target='_blank'>@alphorriese/cib-style</a></p>
+            </div>
+          </li>
+
+          <li class='project-item'>
+            <h5 class='project-text-logo'>SOM</h5>
             <label>SOM</label>
             <div class='content'>
               <p>
-                <label>Cargo:</label><label>Voluntário</label>
+                <label><span class="lang-pt">Cargo:</span><span class="lang-en">Role:</span></label>
+                <label><span class="lang-pt">Voluntário</span><span class="lang-en">Volunteer</span></label>
               </p>
               <div class='description'>
-                <label>Descrição:</label>
+                <label><span class="lang-pt">Descrição:</span><span class="lang-en">Description:</span></label>
                 <p>
-                  Em parceria com a Midia Ninja, fizemos uma plataforma que conecta artistas independentes com produtores músicais.
-                  O príncipal foco da plataforma é levar acesso para pequenas bandas, dando a oportunidade de promoção da banda/artista e
-                  levando oportunidade de tocar não só na sua cidade, como fazer turnês nacionais e internacionais.
+                  <span class="lang-pt">Em parceria com a Midia Ninja, plataforma que conecta artistas independentes com produtores musicais, criando oportunidades de promoção e turnês nacionais e internacionais.</span>
+                  <span class="lang-en">In partnership with Midia Ninja, a platform connecting independent artists with music producers, creating opportunities for promotion and national/international tours.</span>
                 </p>
               </div>
               <p><label>website: </label><a href='https://som.vc' target='_blank'>som.vc</a></p>
             </div>
           </li>
+
           <li class='project-item'>
-            <img src='https://s3-us-west-2.amazonaws.com/ace1.com.br/dist/images/logo.svg'/>
+            <h5 class='project-text-logo'>ACE1</h5>
             <label>ACE1</label>
             <div class='content'>
               <p>
-                <label>Cargo:</label><label>CTO</label>
+                <label><span class="lang-pt">Cargo:</span><span class="lang-en">Role:</span></label>
+                <label>CTO</label>
               </p>
               <div class='description'>
-                <label>Descrição:</label>
-                <p>Desenvolvida com React Native, a plataforma do tipo marketplace, trás para o Brasil, um modelo parecido com stock-X e Goat, com o foco em produtos de luxo, todo produto vendido no marketplace passa por um "legity check" onde analisamos o produto para garantir para nosso cliente a autenticidade do produto comprado.</p>
+                <label><span class="lang-pt">Descrição:</span><span class="lang-en">Description:</span></label>
+                <p>
+                  <span class="lang-pt">Marketplace em React Native que trouxe ao Brasil um modelo similar ao StockX e Goat. Todo produto passa por verificação de autenticidade antes da entrega ao comprador.</span>
+                  <span class="lang-en">React Native marketplace bringing a GOAT/StockX model to Brazil. Every product goes through an authenticity check before delivery to the buyer.</span>
+                </p>
               </div>
               <p><label>website: </label><a href='https://ace1.com.br' target='_blank'>ace1.com.br</a></p>
-              <p><label>app: </label><a href='https://play.google.com/store/apps/details?id=com.aceoneapp&hl=pt_BR' target='_blank'>acessar play store</a></p>
-              <p><label>app: </label><a href='https://apps.apple.com/br/app/ace1/id1462776917' target='_blank'>acessar apple store</a></p>
+              <p><label>app: </label><a href='https://play.google.com/store/apps/details?id=com.aceoneapp&hl=pt_BR' target='_blank'>Play Store</a></p>
+              <p><label>app: </label><a href='https://apps.apple.com/br/app/ace1/id1462776917' target='_blank'>Apple Store</a></p>
             </div>
           </li>
+
           <li class='project-item'>
-            <img src='https://permutafacil.net/assets/images/logo_grey_new.svg'/>
+            <h5 class='project-text-logo'>PF</h5>
             <label>Permuta Fácil</label>
             <div class='content'>
               <p>
-                <label>Cargo:</label><label>Team Lead/Tech Lead</label>
+                <label><span class="lang-pt">Cargo:</span><span class="lang-en">Role:</span></label>
+                <label>Team Lead / Tech Lead</label>
               </p>
               <div class='description'>
-                <label>Descrição:</label>
-                <p>Plataforma focada em permuta de imóvel. Nela você consegue cadastrar seu imóvel e o imóvel que você quer em troca, então procuramos 'matches' em nosso banco de dados que combinam com o seu interesse, assim, renderizamos um mapa para analise da região com um pin em cada propriedade (como um tinder, que renderiza no mapa onde está o seu match). </p>
+                <label><span class="lang-pt">Descrição:</span><span class="lang-en">Description:</span></label>
+                <p>
+                  <span class="lang-pt">Plataforma de permuta de imóveis. Cadastre seu imóvel e o desejado, e o sistema encontra matches no banco de dados, exibindo um mapa estilo Tinder com as propriedades compatíveis.</span>
+                  <span class="lang-en">Property exchange platform. Register your property and desired swap, and the system finds matches in the database, displaying a Tinder-style map with compatible properties.</span>
+                </p>
               </div>
-              <p><label>website: </label><a href='https://permutafacil.net' target='_blank'>permutafacil.net </a></p>
+              <p><label>website: </label><a href='https://permutafacil.net' target='_blank'>permutafacil.net</a></p>
             </div>
           </li>
+
           <li class='project-item'>
-            <img src="https://s3.amazonaws.com/sample-login/companies/avatars/000/007/811/original/Logo_Consorciei.jpg?1541536771"/>
+            <h5 class='project-text-logo'>C</h5>
             <label>Consorciei</label>
             <div class='content'>
               <p>
-                <label>Cargo:</label><label>Team Lead/Tech Lead</label>
+                <label><span class="lang-pt">Cargo:</span><span class="lang-en">Role:</span></label>
+                <label>Team Lead / Tech Lead</label>
               </p>
               <div class='description'>
-                <label>Descrição:</label>
-                <p> Plataforma para administração de cotas de consórcio, onde a empresa cadastra cotas
-                  que tem interesse em comprar e passamos por um filtro step-by-step, ajudando o usuário a julgar aquela compra, como por exemplo agências de consorcio que a empresa não trabalha recebe uma tag
-                  diferente, onde ele consegue ver nitidamente que aquela não vai passar no filtro, na plataforma, você consegue tambem mandar mensagens pelo whatsapp web pedindo documentos ou atualizando o
-                  cliente com informações do progresso da compra da cota.</p>
+                <label><span class="lang-pt">Descrição:</span><span class="lang-en">Description:</span></label>
+                <p>
+                  <span class="lang-pt">Plataforma de administração de cotas de consórcio com filtros step-by-step e integração com WhatsApp Web para comunicação direta com clientes.</span>
+                  <span class="lang-en">Consortium share management platform with step-by-step filters and WhatsApp Web integration for direct client communication.</span>
+                </p>
               </div>
-              <p><label>website: </label><a href='https://www.consorciei.com.br/' target='_blank'>consorciei.com.br </a></p>
+              <p><label>website: </label><a href='https://www.consorciei.com.br/' target='_blank'>consorciei.com.br</a></p>
             </div>
           </li>
+
           <li class='project-item'>
-            <img src='http://h2ocompany.com.br/co/wp-content/uploads/2015/06/logoh2o-300x109.jpg'/>
+            <h5 class='project-text-logo'>ARCA</h5>
             <label>ARCA</label>
             <div class='content'>
               <p>
-                <label>Cargo:</label><label>Único dev da plataforma</label>
+                <label><span class="lang-pt">Cargo:</span><span class="lang-en">Role:</span></label>
+                <label><span class="lang-pt">Único dev da plataforma</span><span class="lang-en">Sole Developer</span></label>
               </p>
               <div class='description'>
-                <label>Descrição:</label>
-                <p> Plataforma questionário, onde empresas responderam perguntas sobre o seu gasto e tratamento
-                    de água, no final é gerado um gráfico especial com dicas de como melhorar o ecosistema de algumas
-                    indústrias. Usei ReactJs com Stylus, webpack e api RESTful, mongoDB e python para gerar o relatório em
-                    pdf.</p>
+                <label><span class="lang-pt">Descrição:</span><span class="lang-en">Description:</span></label>
+                <p>
+                  <span class="lang-pt">Plataforma questionário para análise de consumo e tratamento de água em empresas, gerando relatórios PDF personalizados com dicas de melhoria. ReactJs, MongoDB, Python.</span>
+                  <span class="lang-en">Questionnaire platform for water usage and treatment analysis in companies, generating custom PDF reports with improvement tips. ReactJs, MongoDB, Python.</span>
+                </p>
               </div>
-              <p><label>website: </label><a href='http://h2ocompany.com.br/' target='_blank'>h2ocompany.com. </a></p>
+              <p><label>website: </label><a href='http://h2ocompany.com.br/' target='_blank'>h2ocompany.com.br</a></p>
             </div>
           </li>
+
           <li class='project-item'>
             <h5 class='centoeonze'>111</h5>
             <label>Cento e Onze</label>
             <div class='content'>
               <p>
-                <label>Cargo:</label><label>Desenvolvedor Front-end</label>
+                <label><span class="lang-pt">Cargo:</span><span class="lang-en">Role:</span></label>
+                <label><span class="lang-pt">Desenvolvedor Front-end</span><span class="lang-en">Frontend Developer</span></label>
               </p>
               <div class='description'>
-                <label>Descrição:</label>
-                <p>Plataforma totalmente artística, elaborada a partir da verba de um Termo de Ajuste de
-                    Conduta [TAC], endereçado a uma construtora brasileira [OAS] flagrada empregando 111 trabalhadores
-                    da construção civil no Aeroporto de Guarulhos [Terminal 3], em condições de trabalho análogo ao trabalho
-                    escravo, uma plataforma que não segue os padrões de design e UX. Usamos React com Redux e Stylus
-                    apenas.</p>
+                <label><span class="lang-pt">Descrição:</span><span class="lang-en">Description:</span></label>
+                <p>
+                  <span class="lang-pt">Plataforma artística criada a partir de verba de TAC, documentando 111 trabalhadores da construção do Aeroporto de Guarulhos em condições análogas à escravidão. React, Redux, Stylus.</span>
+                  <span class="lang-en">Artistic platform created from settlement funds, documenting 111 construction workers at Guarulhos Airport who worked in slave-like conditions. React, Redux, Stylus.</span>
+                </p>
               </div>
-              <p><label>website: </label><a href='http://centoeonze111.com' target='_blank'>centoeonze111.com </a></p>
+              <p><label>website: </label><a href='http://centoeonze111.com' target='_blank'>centoeonze111.com</a></p>
             </div>
           </li>
+
           <li class='project-item'>
-            <img class='agro-image' src='https://scontent.fcgh5-1.fna.fbcdn.net/v/t1.0-9/19989350_1830559063938991_1039433529018796839_n.png?_nc_cat=109&_nc_eui2=AeHB4DM0SUPH5GG0HdDT7GIJRMO0jI0zFukh6aqOi584hrx5_TntnSi84Cx3-lO7zgLkcvoVxmHaemQjlE6A6JEib7Y1r1ps5zh8tht5eo5RMw&_nc_oc=AQlWdAObjMFa52IZhorKJ7__NmaonRdoWGUjUfeA3sau4n0Q19g0zSyg-_TK43JPq70&_nc_ht=scontent.fcgh5-1.fna&oh=4568218683993e72a5fe523f0804bc57&oe=5DE1F930'/>
+            <h5 class='project-text-logo'>AT</h5>
             <label>agroTechs</label>
             <div class='content'>
               <p>
-                <label>Cargo:</label><label>Desenvolvedor Full Stack</label>
+                <label><span class="lang-pt">Cargo:</span><span class="lang-en">Role:</span></label>
+                <label><span class="lang-pt">Desenvolvedor Full Stack</span><span class="lang-en">Full Stack Developer</span></label>
               </p>
               <div class='description'>
-                <label>Descrição:</label>
-                <p>Plataforma para controle do da sua fazenda, através de um mapa, você consegue marcar os seus lotes, onde você consegue desgnar funcionarios préviamente cadastrados para fazer algum trabalho em algum lote, ele rece uma mensagem com as instruções em um aplicativo no celular, onde ele tambem pode criar alertas para o 'fazendeiro'.</p>
+                <label><span class="lang-pt">Descrição:</span><span class="lang-en">Description:</span></label>
+                <p>
+                  <span class="lang-pt">Plataforma para controle de fazenda via mapa interativo. Marque lotes, designe funcionários para tarefas e receba alertas no celular.</span>
+                  <span class="lang-en">Farm management platform via interactive map. Mark lots, assign workers to tasks, and receive mobile alerts.</span>
+                </p>
               </div>
-              <p><label>website: </label><a href='https://www.agrotechs.com.br' target='_blank'>agrotechs.com.br </a></p>
+              <p><label>website: </label><a href='https://www.agrotechs.com.br' target='_blank'>agrotechs.com.br</a></p>
             </div>
           </li>
+
         </ul>
       </section>
+
+      <!-- SKILLS -->
       <section id='knowledge'>
-        <h4 class='exp-title'>Experiência de trabalho com:</h4>
-        <ul class='knowledge-list-container' >
+        <h3 class='section-title'><span class="lang-pt">Habilidades</span><span class="lang-en">Skills</span></h3>
+
+        <h4 class='exp-title'>Frontend</h4>
+        <ul class='knowledge-list-container'>
+          <li class='knowledge-list'>
+            <img src='https://cdn.simpleicons.org/react' />
+            <label>React</label>
+          </li>
+          <li class='knowledge-list'>
+            <img src='https://cdn.worldvectorlogo.com/logos/nextjs-2.svg' />
+            <label>Next.js</label>
+          </li>
           <li class='knowledge-list'>
             <img src='https://cdn.worldvectorlogo.com/logos/react.svg' />
             <label>React Native</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://cdn0.iconfinder.com/data/icons/designer-skills/128/node-js-512.png' />
-            <label>Node Js</label>
+            <img src='https://cdn.worldvectorlogo.com/logos/typescript.svg' />
+            <label>TypeScript</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png' />
-            <label>ReactJs</label>
-          </li>
-          <li class='knowledge-list'>
-            <img src='https://s3.amazonaws.com/apollo-docs-1.x/images/logo-apollo-space-left.svg' />
-            <label>ApolloJs</label>
-          </li>
-          <li class='knowledge-list'>
-            <img src='https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png' />
+            <img src='https://cdn.simpleicons.org/redux' />
             <label>Redux</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://png.pngtree.com/svg/20170719/graphql_1135605.png' />
+            <img src='https://cdn.simpleicons.org/graphql' />
             <label>GraphQL</label>
+          </li>
+          <li class='knowledge-list'>
+            <img src='https://cdn.simpleicons.org/apollographql' />
+            <label>Apollo.js</label>
+          </li>
+          <li class='knowledge-list'>
+            <img src='https://cdn.simpleicons.org/webpack' />
+            <label>webpack</label>
+          </li>
+          <li class='knowledge-list'>
+            <img src='https://cdn.simpleicons.org/javascript' />
+            <label>ES6</label>
+          </li>
+        </ul>
+
+        <h4 class='exp-title'>Backend</h4>
+        <ul class='knowledge-list-container'>
+          <li class='knowledge-list'>
+            <img src='https://cdn.worldvectorlogo.com/logos/django.svg' />
+            <label>Django</label>
+          </li>
+          <li class='knowledge-list'>
+            <img src='https://cdn.simpleicons.org/nodedotjs' />
+            <label>Node.js</label>
+          </li>
+          <li class='knowledge-list'>
+            <img src='https://cdn.worldvectorlogo.com/logos/python-5.svg' />
+            <label>Python</label>
+          </li>
+          <li class='knowledge-list'>
+            <img src='https://cdn.simpleicons.org/express' />
+            <label>Express</label>
+          </li>
+          <li class='knowledge-list'>
+            <img src='https://cdn.worldvectorlogo.com/logos/fastapi-1.svg' />
+            <label>FastAPI</label>
+          </li>
+          <li class='knowledge-list'>
+            <img src='https://cdn.worldvectorlogo.com/logos/postgresql.svg' />
+            <label>PostgreSQL</label>
           </li>
           <li class='knowledge-list'>
             <img src='https://cdn.worldvectorlogo.com/logos/mysql.svg' />
             <label>MySQL</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://sophosnews.files.wordpress.com/2017/01/mongodb.png?w=780&h=408&crop=1' />
+            <img src='https://cdn.simpleicons.org/mongodb' />
             <label>MongoDB</label>
           </li>
           <li class='knowledge-list'>
-            <img src='http://joelcox.io/scripts/logos/express-logo.png' />
-            <label>express</label>
+            <img src='https://cdn.worldvectorlogo.com/logos/redis.svg' />
+            <label>Redis</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://camo.githubusercontent.com/93eee74007b812c1b89779ca038b0b3e26f02452/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f736f636b65742d696f2e7376673f73616e6974697a653d74727565' />
+            <img src='https://cdn.simpleicons.org/socketdotio' />
             <label>Socket.io</label>
           </li>
-          <li class='knowledge-list'>
-            <img src='https://camo.githubusercontent.com/df9481f45be93c1100b93e7f2272be95b49663d4/68747470733a2f2f776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f7765627061636b2e737667' />
-            <label>webpack</label>
-          </li>
-          <li class='knowledge-list'>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gulp.js_Logo.svg/2000px-Gulp.js_Logo.svg.png' />
-            <label>Gulp</label>
-          </li>
-          <li class='knowledge-list'>
-            <img src='https://miro.medium.com/max/640/1*PFDFHEJZiETncPczyBVJOQ.jpeg' />
-            <label>ES6</label>
-          </li>
         </ul>
-        <h4 class='exp-title'>aws:</h4>
-        <ul class='knowledge-list-container' >
+
+        <h4 class='exp-title'>DevOps / Cloud</h4>
+        <ul class='knowledge-list-container'>
+          <li class='knowledge-list'>
+            <img src='https://cdn.worldvectorlogo.com/logos/docker.svg' />
+            <label>Docker</label>
+          </li>
           <li class='knowledge-list'>
             <img src='https://cdn.worldvectorlogo.com/logos/aws-ec2.svg' />
-            <label>EC2</label>
-          </li>
-          <li class='knowledge-list'>
-            <img src='https://xebialabs.com/assets/files/logos/AWS%20ECR%20logo.jpg' />
-            <label>ECR</label>
-          </li>
-          <li class='knowledge-list'>
-            <img src='https://cdn-images-1.medium.com/max/790/1*3fqUKBLkXK4pmb3gVgrv8Q.png' />
-            <label>ECS</label>
-          </li>
-          <li class='knowledge-list'>
-            <img src='https://blog.novatec-gmbh.de/wp-content/uploads/2017/12/beanstalk.png' />
-            <label>Elastic Beanstalk</label>
-          </li>
-          <li class='knowledge-list'>
-            <img src='https://cdn.worldvectorlogo.com/logos/aws-route53.svg' />
-            <label>route 53</label>
+            <label>AWS EC2</label>
           </li>
           <li class='knowledge-list'>
             <img src='https://cdn.worldvectorlogo.com/logos/aws-s3.svg' />
-            <label>S3</label>
+            <label>AWS S3</label>
+          </li>
+          <li class='knowledge-list'>
+            <img src='https://cdn.simpleicons.org/awslambda' />
+            <label>Lambda</label>
           </li>
           <li class='knowledge-list'>
             <img src='https://cdn.worldvectorlogo.com/logos/aws-api-gateway.svg' />
-            <label>Gateway API</label>
+            <label>API Gateway</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://i1.wp.com/www.awsomeblog.com/wp-content/uploads/2016/05/aws-codepipeline.png?fit=300%2C300' />
-            <label>Code Pipeline</label>
+            <img src='https://cdn.simpleicons.org/amazonecs' />
+            <label>ECR / ECS</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://d0.awsstatic.com/icons/CodeCommitServiceIcon.png' />
-            <label>Code Commit</label>
+            <img src='https://cdn.worldvectorlogo.com/logos/aws-route53.svg' />
+            <label>Route 53</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://www.ibexlabs.com/wp-content/uploads/2018/09/DeveloperTools_AWSCodeBuild_LARGE.png' />
-            <label>Code Build</label>
+            <img src='https://cdn.simpleicons.org/amazonwebservices' />
+            <label>CodePipeline</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://cdn.worldvectorlogo.com/logos/aws-codedeploy.svg' />
-            <label>Code Deploy</label>
+            <img src='https://cdn.simpleicons.org/githubactions' />
+            <label>GitHub Actions</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://static1.squarespace.com/static/51814c87e4b0c1fda9c1fc50/t/5b1aa6de0e2e72eb6ae78874/1528473315906/600px-AWS_Lambda_logo.svg.png' />
-            <label>Lambda Function</label>
+            <img src='https://cdn.worldvectorlogo.com/logos/prometheus.svg' />
+            <label>Prometheus</label>
+          </li>
+          <li class='knowledge-list'>
+            <img src='https://cdn.worldvectorlogo.com/logos/grafana.svg' />
+            <label>Grafana</label>
           </li>
         </ul>
-        <h4 class='exp-title'>Experiência adquirida na faculdade:</h4>
-        <ul class='knowledge-list-container' >
+
+        <h4 class='exp-title'><span class="lang-pt">Outros / Formação</span><span class="lang-en">Other / Background</span></h4>
+        <ul class='knowledge-list-container'>
           <li class='knowledge-list'>
-            <img src='http://rbwebsolutions.in/wp-content/uploads/2018/05/c-programming.png' />
+            <img src='https://cdn.simpleicons.org/c' />
             <label>C</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://camo.githubusercontent.com/0617f4657fef12e8d16db45b8d73def73144b09f/68747470733a2f2f646576656c6f7065722e6665646f726170726f6a6563742e6f72672f7374617469632f6c6f676f2f6373686172702e706e67' />
+            <img src='https://cdn.simpleicons.org/csharp' />
             <label>C#</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://i.pinimg.com/originals/ec/be/4b/ecbe4b1deef8e7582f0959b1559e729f.png' />
+            <img src='https://cdn.simpleicons.org/java' />
             <label>Java EE</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/9f78fc09-faec-4068-82bd-09e7cc8bbf34/File/5e992a1d408cf9773157761c0fa13bb9/java_se_8u131_releases__bl.png' />
-            <label>Java SE</label>
-          </li>
-          <li class='knowledge-list'>
-            <img src='http://pngimg.com/uploads/linux/linux_PNG1.png' />
+            <img src='https://cdn.simpleicons.org/linux' />
             <label>Linux</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png' />
+            <img src='https://cdn.simpleicons.org/mysql' />
             <label>MySQL</label>
           </li>
           <li class='knowledge-list'>
-            <img src='https://www.escolaacelera.com.br/wp-content/uploads/2018/09/Design-sem-nome-14.png' />
-            <label>Empreendedorismo</label>
+            <label><span class="lang-pt">Empreendedorismo</span><span class="lang-en">Entrepreneurship</span></label>
           </li>
         </ul>
+
       </section>
+
+      <!-- CONTACT -->
       <section id='footer'>
         <ul>
-          <h5>Contato</h5>
+          <li><h5><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></h5></li>
           <li>
-            <a href='https://github.com/isaquebc' target='_blank'>
-              <img src='https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_gray-512.png' />
-              <label>Github</label>
-            </a>
-          </li>
-          <li>
-            <a target='_blank' href='https://www.linkedin.com/in/isaque-benevides-costa-303a9490/'>
-              <img src='https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_gray-512.png'/>
-              <label>Linkedin</label>
-            </a>
-          </li>
-          <li>
-            <a href='https://api.whatsapp.com/send?phone=5511986756042'>
-              <img target='_blank' src='https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/whatsapp-512.png'/>
-              <label>WhatsApp</label>
-            </a>
+            <ul class="social-contact">
+              <li>
+                <a href='https://github.com/isaquebc' target='_blank'>
+                  <img src='https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_gray-512.png' />
+                  <label>Github</label>
+                </a>
+              </li>
+              <li>
+                <a target='_blank' href='https://www.linkedin.com/in/isaque-benevides-costa-303a9490/'>
+                  <img src='https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_gray-512.png'/>
+                  <label>Linkedin</label>
+                </a>
+              </li>
+              <li>
+                <a href='https://api.whatsapp.com/send?phone=5511986756042'>
+                  <img src='https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/whatsapp-512.png'/>
+                  <label>WhatsApp</label>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
+
     </main>
+
+    <script>
+      var toggle = document.getElementById('lang-toggle');
+      toggle.addEventListener('click', function() {
+        if (document.body.dataset.lang === 'pt') {
+          document.body.dataset.lang = 'en';
+          toggle.textContent = 'PT';
+        } else {
+          document.body.dataset.lang = 'pt';
+          toggle.textContent = 'EN';
+        }
+      });
+    </script>
   </body>
 </html>

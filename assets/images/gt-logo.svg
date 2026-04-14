@@ -1,0 +1,28 @@
+<svg
+  version="1.1"
+  id="Layer_1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  x="0px"
+  y="0px"
+  viewBox="0 0 67.75 72.89"
+  style="enable-background: new 0 0 67.75 72.89"
+  xml:space="preserve"
+>
+  <style type="text/css">
+    .st0 { display: none; }
+    .st1 { fill: #ed2024; }
+    .st2 { fill: #ffffff; }
+  </style>
+  <circle class="st0" cx="33.87" cy="33.87" r="53.97" />
+  <g>
+    <circle cx="33.87" cy="33.87" r="33.87" />
+    <circle class="st1" cx="33.87" cy="57.53" r="15.36" />
+    <path
+      class="st2"
+      d="M43.91,25.4c-0.42,5.24-10.04,27-10.04,27s-9.58-21.17-10.04-27c-0.44-5.53,4.5-10.04,10.04-10.04
+S44.36,19.87,43.91,25.4z"
+    />
+    <circle cx="33.87" cy="25.38" r="3.77" />
+  </g>
+</svg>

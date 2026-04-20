@@ -27,7 +27,7 @@
           <li><a class='menu' href='#knowledge'><span class="lang-pt">Habilidades</span><span class="lang-en">Skills</span></a></li>
           <li><a class='menu' href='#education'><span class="lang-pt">Formação</span><span class="lang-en">Education</span></a></li>
           <li><a class='menu' href='#footer'><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a></li>
-          <li><a class='menu' target='_blank' href='/curriculum/assets/files/resume_isaque_costa_2026.pdf'><span class="lang-pt">Currículo</span><span class="lang-en">Resume</span><img class='download-icon' src='/curriculum/assets/images/iconfinder_24_171492.svg'/></a></li>
+          <li><a id='resume-link' class='menu' target='_blank' href='/curriculum/assets/files/resume_isaque_costa_2026.pdf'><span class="lang-pt">Currículo</span><span class="lang-en">Resume</span><img class='download-icon' src='/curriculum/assets/images/iconfinder_24_171492.svg'/></a></li>
           <li><button class='lang-toggle' id='lang-toggle'>EN</button></li>
         </ul>
       </nav>
@@ -600,14 +600,45 @@
     <script>
       var toggle = document.getElementById('lang-toggle');
       toggle.addEventListener('click', function() {
-        if (document.body.dataset.lang === 'pt') {
-          document.body.dataset.lang = 'en';
-          toggle.textContent = 'PT';
-        } else {
-          document.body.dataset.lang = 'pt';
-          toggle.textContent = 'EN';
+        var next = document.body.dataset.lang === 'pt' ? 'en' : 'pt';
+        document.body.dataset.lang = next;
+        toggle.textContent = next === 'pt' ? 'EN' : 'PT';
+        if (typeof gtag === 'function') {
+          gtag('event', 'language_change', { language: next });
         }
       });
+
+      var resumeLink = document.getElementById('resume-link');
+      if (resumeLink) {
+        resumeLink.addEventListener('click', function() {
+          if (typeof gtag === 'function') {
+            gtag('event', 'resume_download', {
+              language: document.body.dataset.lang,
+              file_name: 'resume_isaque_costa_2026.pdf'
+            });
+          }
+        });
+      }
+
+      if ('IntersectionObserver' in window) {
+        var seen = {};
+        var sectionObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !seen[entry.target.id]) {
+              seen[entry.target.id] = true;
+              if (typeof gtag === 'function') {
+                gtag('event', 'section_view', {
+                  section_id: entry.target.id,
+                  language: document.body.dataset.lang
+                });
+              }
+            }
+          });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('main section[id]').forEach(function(s) {
+          sectionObserver.observe(s);
+        });
+      }
     </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-61ZEQJTRLK"></script>

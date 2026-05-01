@@ -3,401 +3,273 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isaque Benevides Costa — Resume 2026</title>
+  <title>Isaque Benevides Costa — Senior Full Stack Developer</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    :root {
-      --accent: #0f7eff;
-      --dark: #111827;
-      --mid: #374151;
-      --muted: #6b7280;
-      --light: #f9fafb;
-      --border: #e5e7eb;
-      --tag-bg: #eff6ff;
-      --tag-color: #1d4ed8;
-    }
-
     body {
-      font-family: 'Inter', 'Segoe UI', sans-serif;
-      font-size: 10.5pt;
-      line-height: 1.5;
-      color: var(--dark);
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 10pt;
+      line-height: 1.4;
+      color: #000;
       background: #fff;
       max-width: 800px;
       margin: 0 auto;
-      padding: 36px 40px;
+      padding: 22px 32px;
     }
 
-    /* ── HEADER ──────────────────────────────────────────── */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding-bottom: 14px;
-      border-bottom: 2px solid var(--accent);
-      margin-bottom: 18px;
-    }
-    .header-left h1 {
-      font-size: 22pt;
+    a { color: #000; text-decoration: none; }
+
+    .header { margin-bottom: 10px; }
+    .header h1 {
+      font-size: 20pt;
       font-weight: 700;
-      letter-spacing: -0.5px;
-      color: var(--dark);
+      color: #000;
     }
-    .header-left .title {
-      font-size: 11pt;
-      font-weight: 500;
-      color: var(--accent);
-      margin-top: 2px;
-    }
-    .header-left .subtitle {
-      font-size: 9.5pt;
-      color: var(--muted);
-      margin-top: 2px;
-    }
-    .header-right {
-      text-align: right;
-      font-size: 9.5pt;
-      color: var(--mid);
-      line-height: 1.8;
-    }
-    .header-right a {
-      color: var(--mid);
-      text-decoration: none;
-    }
-
-    /* ── SECTIONS ────────────────────────────────────────── */
-    section { margin-bottom: 18px; }
-
-    .section-label {
-      font-size: 8pt;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      color: var(--accent);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 3px;
-      margin-bottom: 10px;
-    }
-
-    /* ── SUMMARY ─────────────────────────────────────────── */
-    .summary p {
-      color: var(--mid);
-      font-size: 10pt;
-      line-height: 1.6;
-    }
-
-    /* ── EXPERIENCE ──────────────────────────────────────── */
-    .job { margin-bottom: 14px; }
-    .job:last-child { margin-bottom: 0; }
-
-    .job-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      gap: 4px;
-    }
-    .job-title {
+    .header .title {
       font-size: 11pt;
       font-weight: 600;
-      color: var(--dark);
+      color: #000;
+      margin-top: 2px;
     }
-    .job-period {
-      font-size: 9pt;
-      color: var(--muted);
-      white-space: nowrap;
+    .header .subtitle {
+      font-size: 9.5pt;
+      color: #000;
+      margin-top: 2px;
     }
-    .job-company {
-      font-size: 10pt;
-      font-weight: 500;
-      color: var(--accent);
-    }
-    .job-location {
-      font-size: 9pt;
-      color: var(--muted);
-      margin-bottom: 5px;
-    }
-    .job ul {
-      margin-left: 16px;
+    .header .contact {
+      font-size: 9.5pt;
+      color: #000;
       margin-top: 4px;
-    }
-    .job ul li {
-      font-size: 9.5pt;
-      color: var(--mid);
-      margin-bottom: 2px;
-      line-height: 1.5;
-    }
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-      margin-top: 6px;
-    }
-    .tag {
-      background: var(--tag-bg);
-      color: var(--tag-color);
-      font-size: 8pt;
-      font-weight: 500;
-      padding: 1px 7px;
-      border-radius: 99px;
-    }
-
-    /* ── SKILLS ──────────────────────────────────────────── */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 100px 1fr;
-      gap: 5px 10px;
-    }
-    .skills-grid .skill-cat {
-      font-size: 9pt;
-      font-weight: 600;
-      color: var(--dark);
-      padding-top: 1px;
-    }
-    .skills-grid .skill-list {
-      font-size: 9.5pt;
-      color: var(--mid);
-    }
-
-    /* ── PROJECTS ────────────────────────────────────────── */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px 16px;
-    }
-    .project {
-      padding: 7px 10px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-    }
-    .project-name {
-      font-size: 10pt;
-      font-weight: 600;
-      color: var(--dark);
-    }
-    .project-role {
-      font-size: 8.5pt;
-      color: var(--accent);
-      margin-bottom: 3px;
-    }
-    .project-desc {
-      font-size: 9pt;
-      color: var(--mid);
       line-height: 1.45;
     }
 
-    /* ── PRINT ───────────────────────────────────────────── */
+    section { margin-bottom: 8px; }
+
+    .section-label {
+      font-size: 9pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #000;
+      border-bottom: 1px solid #000;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+    }
+
+    .summary p {
+      color: #000;
+      font-size: 10pt;
+      line-height: 1.4;
+    }
+    .summary p + p { margin-top: 4px; }
+
+    .job { margin-bottom: 7px; }
+    .job:last-child { margin-bottom: 0; }
+
+    .job-line {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #000;
+    }
+    .job-meta {
+      font-size: 9pt;
+      color: #000;
+      margin-bottom: 2px;
+    }
+    .job ul {
+      margin-left: 14px;
+      margin-top: 2px;
+    }
+    .job ul li {
+      font-size: 9.5pt;
+      color: #000;
+      margin-bottom: 1px;
+      line-height: 1.4;
+    }
+    .tech-line {
+      font-size: 9pt;
+      color: #000;
+      margin-top: 3px;
+    }
+    .tech-line strong { font-weight: 700; }
+
+    .skill-row {
+      font-size: 9.5pt;
+      color: #000;
+      margin-bottom: 2px;
+      line-height: 1.35;
+    }
+    .skill-row strong { font-weight: 700; }
+
+    .edu { margin-bottom: 4px; }
+    .edu:last-child { margin-bottom: 0; }
+    .edu-line {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #000;
+    }
+    .edu-meta {
+      font-size: 9pt;
+      color: #000;
+    }
+
+    .project { margin-bottom: 5px; }
+    .project:last-child { margin-bottom: 0; }
+    .project-line {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #000;
+    }
+    .project-meta {
+      font-size: 9pt;
+      color: #000;
+    }
+    .project-desc {
+      font-size: 9.5pt;
+      color: #000;
+      line-height: 1.35;
+      margin-top: 1px;
+    }
+
     @media print {
       body {
         padding: 0;
         margin: 0;
         max-width: 100%;
-        box-shadow: none;
       }
       @page {
         size: A4;
-        margin: 16mm 18mm;
+        margin: 14mm 16mm;
       }
-      a { color: inherit !important; }
-    }
-
-    @media screen {
-      body { box-shadow: 0 2px 24px rgba(0,0,0,0.08); min-height: 100vh; }
+      a { color: #000 !important; }
+      .job, .project, .edu { page-break-inside: avoid; break-inside: avoid; }
+      .job-line, .job-meta, .project-line, .project-meta, .edu-line { page-break-after: avoid; break-after: avoid; }
+      .section-label { page-break-after: avoid; break-after: avoid; }
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
   <header class="header">
-    <div class="header-left">
-      <h1>Isaque Benevides Costa</h1>
-      <div class="title">Senior Full Stack Developer</div>
-      <div class="subtitle">9+ years of experience &nbsp;·&nbsp; Started 2013 · First internship 2017</div>
-    </div>
-    <div class="header-right">
-      <div><a href="https://github.com/isaquebc">github.com/isaquebc</a></div>
-      <div><a href="https://www.linkedin.com/in/isaquebc/">linkedin.com/in/isaquebc</a></div>
-      <div><a href="https://isaquebc.github.io/curriculum/">isaquebc.github.io/curriculum</a></div>
-      <div>+55 11 98675-6042</div>
+    <h1>Isaque Benevides Costa</h1>
+    <div class="title">Senior Full Stack Developer</div>
+    <div class="subtitle">Senior Full Stack Engineer &nbsp;·&nbsp; Senior Software Engineer &nbsp;·&nbsp; Backend Engineer &nbsp;·&nbsp; Frontend Developer &nbsp;·&nbsp; Tech Lead &nbsp;·&nbsp; 9+ years</div>
+    <div class="contact">
+      isaquebc@gmail.com &nbsp;·&nbsp; +55 11 98675-6042 &nbsp;·&nbsp; São Paulo, Brazil &nbsp;·&nbsp; Remote &nbsp;·&nbsp;
+      github.com/isaquebc &nbsp;·&nbsp; linkedin.com/in/isaquebc &nbsp;·&nbsp; isaquebc.github.io/curriculum
     </div>
   </header>
 
-  <!-- SUMMARY -->
   <section class="summary">
     <div class="section-label">Summary</div>
     <p>
-      Senior full stack developer with 9+ years of experience across startups, CTO roles, and enterprise remote work.
-      Most recently spent 5 years at a US pipeline-tracking company (CDI GlobalTrack, Oklahoma) as the main developer
-      on a real-time inspection platform — owning the full stack from React + TypeScript frontend to Django backend,
-      multi-database architecture, Docker orchestration, AWS deployment, and Prometheus/Grafana monitoring.
-      Currently applying that same systems thinking to AI: designing multi-agent architectures with custom governance
-      protocols (ADR, AIR, mandatory review gates) and orchestrating specialized Claude agents across full-stack projects.
-      Comfortable leading architecture decisions, shipping production systems end-to-end, and working independently
-      across time zones.
+      Senior Full Stack Developer / Senior Full-Stack Engineer / Senior Software Engineer / Senior Software
+      Developer with 9+ years across startups, Chief Technology Officer (CTO) roles, and enterprise remote
+      work as Software Engineer / Software Developer, Backend Engineer / Backend Developer, Frontend
+      Engineer / Frontend Developer, and Tech Lead. Most recently 5 years on the core software engineering
+      team at CDI GlobalTrack (Oklahoma, USA, remote) on a real-time pipeline-inspection platform — full
+      ownership of React + TypeScript frontend, Django backend, multi-database architecture (PostgreSQL /
+      PostGIS, MongoDB, Redis), Docker, Amazon Web Services (AWS), and Prometheus / Grafana observability.
+    </p>
+    <p>
+      Currently architecting Artificial Intelligence (AI) multi-agent systems with custom governance
+      protocols (ADR, AIR, mandatory review gates) and orchestrating specialized Claude agents across
+      full-stack projects. Comfortable as Technical Lead / Engineering Lead leading architecture decisions
+      and shipping production end-to-end. Intermediate+ professional English.
     </p>
   </section>
 
-  <!-- EXPERIENCE -->
   <section>
     <div class="section-label">Work Experience</div>
 
     <div class="job">
-      <div class="job-header">
-        <span class="job-title">Senior Full Stack Developer</span>
-        <span class="job-period">Mar 2021 – Apr 2026</span>
-      </div>
-      <div class="job-company">CDI GlobalTrack</div>
-      <div class="job-location">Oklahoma, USA &nbsp;·&nbsp; Remote</div>
+      <div class="job-line">Senior Full Stack Developer — CDI GlobalTrack</div>
+      <div class="job-meta">Mar 2021 – Apr 2026 &nbsp;·&nbsp; Oklahoma, USA &nbsp;·&nbsp; Remote</div>
       <ul>
-        <li>End-to-end ownership of frontend (React + TypeScript) and backend (Django, 31 apps) for an enterprise pipeline inspection platform</li>
-        <li>Built real-time GPS tracking and anomaly detection using WebSockets and the RxDjango reactive framework</li>
-        <li>Designed multi-database architecture: PostgreSQL with PostGIS, MongoDB, Redis, Memcached</li>
-        <li>Maintained Docker orchestration, GitHub Actions CI/CD pipelines, and AWS infrastructure (EC2, RDS, S3, ECR)</li>
-        <li>Set up and owned monitoring stack: Prometheus, Grafana, Loki, Sentry</li>
+        <li>Member of the core software engineering team on an enterprise pipeline-inspection platform used daily by operators, supervisors, and clients across the US</li>
+        <li>End-to-end ownership of frontend (React 18 + TypeScript) and backend (Django, 31 apps): authentication, ingestion, spatial queries, live streaming, multi-step forms, map-based UIs, and role-aware navigation</li>
+        <li>Built real-time Global Positioning System (GPS) tracking and anomaly detection over WebSockets and the RxDjango reactive framework (co-author)</li>
+        <li>Designed multi-database architecture (PostgreSQL with PostGIS, MongoDB, Redis, Memcached); maintained Docker orchestration, GitHub Actions Continuous Integration / Continuous Deployment (CI/CD), and Amazon Web Services (AWS) infrastructure (EC2, RDS, S3, ECR, ECS, Lambda, API Gateway, Route 53, CodePipeline)</li>
+        <li>Built the observability stack from scratch — Prometheus, Grafana, Loki, Sentry — metrics, log aggregation, alerting, root-cause analysis; led code reviews, mentored juniors, applied SOLID and Test-Driven Development (TDD)</li>
       </ul>
-      <div class="tags">
-        <span class="tag">Django</span><span class="tag">React</span><span class="tag">TypeScript</span>
-        <span class="tag">PostGIS</span><span class="tag">WebSockets</span><span class="tag">Docker</span>
-        <span class="tag">AWS</span><span class="tag">Prometheus</span><span class="tag">Grafana</span>
-      </div>
+      <div class="tech-line"><strong>Technologies:</strong> Python, Django, React, TypeScript, PostgreSQL, PostGIS, MongoDB, Redis, REST API, GraphQL, WebSockets, Docker, AWS, GitHub Actions, Prometheus, Grafana, Loki, Sentry</div>
     </div>
 
     <div class="job">
-      <div class="job-header">
-        <span class="job-title">CTO</span>
-        <span class="job-period">2019 – 2021</span>
-      </div>
-      <div class="job-company">ACE1</div>
-      <div class="job-location">Brazil</div>
+      <div class="job-line">Chief Technology Officer (CTO) — ACE1</div>
+      <div class="job-meta">2019 – 2021 &nbsp;·&nbsp; Brazil</div>
       <ul>
-        <li>Led full architecture and development of a luxury-goods marketplace competing with GOAT and StockX in Brazil</li>
-        <li>Shipped iOS and Android apps with React Native; serverless AWS backend (Lambda + API Gateway)</li>
-        <li>Built a certificate-of-authenticity system for collectibles and limited-edition sneakers</li>
-        <li>Achieved zero infrastructure cost for 2 years by leveraging AWS serverless at scale</li>
+        <li>Led a 3-person engineering team building a Brazilian luxury-goods marketplace competing with GOAT and StockX — blank slate to production in a fast-paced, founder-led environment</li>
+        <li>Owned the full technical lifecycle — every architecture decision, schema, Application Programming Interface (API) contract, and trade-off; rapid build → ship → iterate cycles with non-technical founders</li>
+        <li>Greenfield Node.js + TypeScript backend on serverless Amazon Web Services (AWS) Lambda + API Gateway with managed PostgreSQL — clean service boundaries, REST API design, 2 years of production traffic at near-zero infrastructure cost</li>
+        <li>React Native iOS and Android frontend; multi-sided marketplace logic (buyers, sellers, admin moderation; commission and fee logic; certificate-of-authenticity flow; full order lifecycle with refunds)</li>
+        <li>Worked directly with marketing co-founder and team — built landing pages with click tracking and shipped attribution data into the platform</li>
       </ul>
-      <div class="tags">
-        <span class="tag">React Native</span><span class="tag">AWS Lambda</span><span class="tag">API Gateway</span>
-        <span class="tag">Node.js</span><span class="tag">Serverless</span><span class="tag">iOS</span><span class="tag">Android</span>
-      </div>
+      <div class="tech-line"><strong>Technologies:</strong> Node.js, TypeScript, AWS Lambda, API Gateway, Serverless, PostgreSQL, React Native, iOS, Android, REST API</div>
     </div>
 
     <div class="job">
-      <div class="job-header">
-        <span class="job-title">Tech Lead <span style="font-weight:400;font-size:9.5pt;color:#6b7280">(started as trainee)</span></span>
-        <span class="job-period">2017 – 2019</span>
-      </div>
-      <div class="job-company">TheVelops</div>
-      <div class="job-location">Brazil</div>
+      <div class="job-line">Tech Lead (started as trainee) — TheVelops</div>
+      <div class="job-meta">2017 – 2019 &nbsp;·&nbsp; Brazil</div>
       <ul>
-        <li>Grew from trainee to tech lead at a startup-agency managing multiple parallel client projects</li>
-        <li>Led Permuta Fácil — a property-exchange platform that became the company's flagship revenue source</li>
-        <li>Owned AWS costs, PR reviews, monitoring, and technical roadmap across 4+ simultaneous projects</li>
-        <li>Built 4 products from scratch; contributed to dozens more across the agency portfolio</li>
+        <li>Grew from trainee to Tech Lead at a startup-agency running 4+ simultaneous client products — rapid prototype, ship, iterate</li>
+        <li>Led Permuta Fácil — a property-exchange matching platform that became the company's flagship revenue source; shipped Node.js + Express REST backends with PostgreSQL or MongoDB layers and React frontends</li>
+        <li>Owned Amazon Web Services (AWS) costs, code reviews, monitoring, and release planning across the portfolio; ran client-facing requirements discussions translating business goals into User Interface (UI), API, and data-model decisions</li>
       </ul>
-      <div class="tags">
-        <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span>
-        <span class="tag">AWS</span><span class="tag">Team Lead</span>
-      </div>
+      <div class="tech-line"><strong>Technologies:</strong> Node.js, Express, REST API, React, MongoDB, PostgreSQL, AWS, Team Leadership</div>
     </div>
   </section>
 
-  <!-- SKILLS -->
   <section>
     <div class="section-label">Skills</div>
-    <div class="skills-grid">
-      <span class="skill-cat">Frontend</span>
-      <span class="skill-list">React, Next.js, React Native, TypeScript, Redux, GraphQL, Apollo.js, webpack, ES6</span>
-
-      <span class="skill-cat">Backend</span>
-      <span class="skill-list">Django, Node.js, Python, Express, FastAPI, PostgreSQL, MySQL, MongoDB, Redis, Socket.io</span>
-
-      <span class="skill-cat">DevOps / Cloud</span>
-      <span class="skill-list">Docker, AWS (EC2, S3, Lambda, API Gateway, ECR/ECS, Route 53, CodePipeline), GitHub Actions, Prometheus, Grafana, Loki, Sentry</span>
-
-      <span class="skill-cat">AI / Agents</span>
-      <span class="skill-list">Claude, Multi-agent orchestration, Claude Code agents, Custom agent protocols (ADR / AIR), Agent-to-agent delegation, Governance & mandatory review gates</span>
-
-      <span class="skill-cat">Background</span>
-      <span class="skill-list">C, C#, Java EE, Linux, Entrepreneurship</span>
-    </div>
+    <div class="skill-row"><strong>Frontend:</strong> React, Next.js, React Native, TypeScript, Redux, GraphQL, Apollo Client, webpack, ECMAScript 2015+ (ES6+), HTML, CSS</div>
+    <div class="skill-row"><strong>Backend:</strong> Django, Node.js, Python, Express, FastAPI, REST API design, GraphQL, WebSockets, Socket.io</div>
+    <div class="skill-row"><strong>Databases:</strong> PostgreSQL, PostGIS, MySQL, MongoDB, Redis, pgvector</div>
+    <div class="skill-row"><strong>DevOps / Cloud:</strong> Docker, Amazon Web Services (AWS) — EC2, S3, Lambda, API Gateway, ECR, ECS, Route 53, CodePipeline; GitHub Actions, Continuous Integration / Continuous Deployment (CI/CD)</div>
+    <div class="skill-row"><strong>Observability:</strong> Prometheus, Grafana, Loki, Sentry — metrics, log aggregation, alerting, root-cause analysis</div>
+    <div class="skill-row"><strong>AI / LLM:</strong> Claude, Claude Code, multi-agent orchestration, custom agent protocols (ADR / AIR), agent-to-agent delegation, governance and mandatory review gates, Retrieval-Augmented Generation (RAG), LangChain, OpenAI, Google Gemini, HuggingFace embeddings</div>
+    <div class="skill-row"><strong>Practices:</strong> SOLID, Test-Driven Development (TDD), clean architecture, Scrum, Kanban, code reviews, mentoring, full-lifecycle ownership, async remote collaboration; background in C, C#, Java EE, Linux, and Entrepreneurship</div>
   </section>
 
-  <!-- EDUCATION -->
   <section>
     <div class="section-label">Education</div>
-    <div class="job">
-      <div class="job-header">
-        <span class="job-title">MBA — Software Engineering with AI</span>
-        <span class="job-period">2026 – 2027</span>
-      </div>
-      <div class="job-company">Full Cycle</div>
+
+    <div class="edu">
+      <div class="edu-line">MBA — Software Engineering with Artificial Intelligence (AI)</div>
+      <div class="edu-meta">Full Cycle &nbsp;·&nbsp; 2026 – 2027</div>
     </div>
 
-    <div class="job">
-      <div class="job-header">
-        <span class="job-title">Associate Degree — Systems Analysis and Development</span>
-        <span class="job-period">2014 – 2017</span>
-      </div>
-      <div class="job-company">Centro Universitário Senac</div>
-      <ul>
-        <li>Coursework projects: Battleship game, pharmacy inventory system, laundry order &amp; stock management platform, and a shoe-store e-commerce application</li>
-        <li>Technologies: Java (procedural and OOP), Java EE (Servlets &amp; JSP), HTML, CSS, JavaScript, SQL Server, and Java DB (Derby)</li>
-      </ul>
+    <div class="edu">
+      <div class="edu-line">Associate Degree — Systems Analysis and Development</div>
+      <div class="edu-meta">Centro Universitário Senac &nbsp;·&nbsp; 2014 – 2017</div>
     </div>
   </section>
 
-  <!-- SELECTED PROJECTS -->
   <section>
     <div class="section-label">Selected Projects</div>
-    <div class="projects-grid">
 
-      <div class="project" style="border-color:#bfdbfe;">
-        <div class="project-name">Minha Kaya <span style="font-size:8pt;font-weight:500;color:#1d4ed8;background:#eff6ff;padding:1px 6px;border-radius:99px;vertical-align:middle">AI Agents</span></div>
-        <div class="project-role">Solo Developer · AI Architect</div>
-        <div class="project-desc">Personal home administration system (bills, tasks, fairness engine). Designed an 8-agent Claude Code system with strict governance: ADR Agent, AIR Agent, CEO Agent, Frontend/Backend Engineers, and mandatory Frontend/Backend Reviewer gates (PASS/FAIL before any merge). FastAPI microservices + Redis Streams event bus.</div>
-      </div>
-
-      <div class="project" style="border-color:#bfdbfe;">
-        <div class="project-name">Creators Safe Club <span style="font-size:8pt;font-weight:500;color:#1d4ed8;background:#eff6ff;padding:1px 6px;border-radius:99px;vertical-align:middle">AI Agents</span></div>
-        <div class="project-role">Solo Developer · AI Architect</div>
-        <div class="project-desc">Receivables advance fintech for Brazilian content creators. Built with a 9-agent Claude orchestration system: Orchestrator routes requests to Backend Engineer, Frontend Engineer, Business Specialist, Credit Risk Analyst, QA, Designer, and CEO agents. Custom protocol enforces business-validation approval gates before any implementation proceeds. Django + Next.js + PostgreSQL + Redis.</div>
-      </div>
-
-      <div class="project" style="border-color:#bfdbfe;">
-        <div class="project-name">MBA AI — Ingest &amp; Search <span style="font-size:8pt;font-weight:500;color:#1d4ed8;background:#eff6ff;padding:1px 6px;border-radius:99px;vertical-align:middle">RAG</span></div>
-        <div class="project-role">Solo Developer &nbsp;·&nbsp; <a href="https://github.com/isaquebc/MBA-AI-ingest-search" style="color:#1d4ed8">github.com/isaquebc/MBA-AI-ingest-search</a></div>
-        <div class="project-desc">Full Cycle MBA challenge. RAG pipeline that ingests a PDF into Postgres + pgvector and answers questions strictly from retrieved context. Pluggable OpenAI / Gemini / HuggingFace embeddings and chat LLM providers via a small factory. Python 3.12 + LangChain + Docker Compose.</div>
-      </div>
-
-      <div class="project">
-        <div class="project-name">Sementes</div>
-        <div class="project-role">Solo Developer</div>
-        <div class="project-desc">Social impact platform celebrating Black history and community. Next.js + Strapi CMS, QR code management system, and data export.</div>
-      </div>
-
-      <div class="project">
-        <div class="project-name">CIB Style</div>
-        <div class="project-role">Author &nbsp;·&nbsp; <a href="https://www.npmjs.com/package/@alphorriese/cib-style" style="color:#1d4ed8">@alphorriese/cib-style</a></div>
-        <div class="project-desc">React component library published on npm. Atomic design system with light/dark theming and Storybook documentation.</div>
-      </div>
-
-      <div class="project">
-        <div class="project-name">Permuta Fácil</div>
-        <div class="project-role">Tech Lead</div>
-        <div class="project-desc">Property-exchange platform. Registers listings and desired swaps, finds matches in the database, and displays them on a Tinder-style map.</div>
-      </div>
-
-      <div class="project">
-        <div class="project-name">SOM</div>
-        <div class="project-role">Volunteer &nbsp;·&nbsp; som.vc</div>
-        <div class="project-desc">Platform connecting independent artists with music producers (in partnership with Mídia Ninja), enabling national and international tour opportunities.</div>
-      </div>
-
+    <div class="project">
+      <div class="project-line">Minha Kaya — Solo Developer, AI Agents Architect</div>
+      <div class="project-desc">Personal home administration system (bills, tasks, fairness engine). 8-agent Claude Code system with strict governance — ADR / AIR / CEO Agents, Frontend and Backend Engineers, mandatory Reviewer gates (PASS / FAIL). FastAPI microservices + Redis Streams event bus.</div>
     </div>
+
+    <div class="project">
+      <div class="project-line">Creators Safe Club — Partner / Co-founder, AI Agents Architect</div>
+      <div class="project-desc">Receivables-advance fintech for Brazilian content creators (deployed, in production). 9-agent Claude orchestration: Backend / Frontend Engineer, Business Specialist, Credit Risk Analyst, QA, Designer, CEO. Django + Next.js + PostgreSQL + Redis.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-line">MBA AI — Ingest &amp; Search — Author</div>
+      <div class="project-meta">github.com/isaquebc/MBA-AI-ingest-search</div>
+      <div class="project-desc">Full Cycle MBA challenge. Retrieval-Augmented Generation (RAG) pipeline ingesting PDFs into PostgreSQL + pgvector. Pluggable OpenAI / Google Gemini / HuggingFace embeddings and chat Large Language Model (LLM) providers. Python 3.12 + LangChain + Docker Compose.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-line">CIB Style — Author, npm: @alphorriese/cib-style</div>
+      <div class="project-desc">Published React + TypeScript component library on npm. Atomic design system with light / dark theming, design tokens, accessibility, and Storybook documentation.</div>
+    </div>
+
   </section>
 
 </body>
